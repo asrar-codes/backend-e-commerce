@@ -2,17 +2,16 @@
 
 > ## High overview of the features i want to implement
 
-## What I'm learning with this project
-
 - Nodejs (express included)
-- Nextjs
+- Nextjs (for now I'll focus on backend only..)
 - Mongodb (mongoose) (data modelling)
-- aws/azure (for file upload)
-- File upload (Multer)
+- File upload (Multer) cloudinary
 - Web sockets
 - Payment Integration (stripe)
 
 ---
+
+## What I'm learning with this project
 
 ## _User Authentication_:
 
@@ -55,21 +54,18 @@
 
 ## Cloud Integration:
 
-- For scalability and reliability, consider integrating with a cloud service (e.g., Amazon Web Services (AWS), Google Cloud Platform (GCP), or Microsoft Azure).
+- For scalability and reliability, consider integrating with a cloud service ( Amazon Web Services )
 - Host your application, database, and static files (product images) in the cloud.
-- Use cloud storage services for file uploads (e.g., Amazon S3 or Google Cloud Storage).
+- Use cloud storage services for file uploads (Amazon S3)
 
 ## **Testing and Deployment:**
 
 - Test your authentication flow thoroughly (registration, login, role-based access).
-- Deploy your application using Docker containers for consistency across environments.
 - Set up continuous integration and deployment (CI/CD) pipelines.
 - Remember to handle edge cases (e.g., what happens when a product goes out of stock) and provide clear error messages to users. Good luck 🛒🌟
 
 # **_overview_**
 
-#### Text data will be saved on mongodb and product images or videos will be stored on cloudinary or aws or azure,
+#### Text data will be saved on mongodb and product images or videos will be stored on mongodb
 
 ====================
-
-## The whole application will be hosted on aws or azure

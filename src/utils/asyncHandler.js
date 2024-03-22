@@ -1,4 +1,4 @@
-import { ApiError } from "../Errors/customErrorClass";
+import { ApiError } from "../Errors/customErrorClass.js";
 
 const asyncHandler = (fn) => {
   return async (req, res, next) => {

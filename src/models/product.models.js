@@ -19,11 +19,11 @@ const Review = mongoose.model("Review", reviewSchema);
 const productSchema = new Schema(
   {
     videoFile: {
-      type: String, // cloudinary url
+      type: String, // aws url
     },
     images: [
       {
-        type: String, // cloudinary url
+        type: String, // aws url
         required: true,
       },
     ],
