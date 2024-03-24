@@ -1,6 +1,7 @@
 import cors from "cors";
 import express from "express";
 import "dotenv/config";
+import cookieParser from "cookie-parser";
 
 import { errorHandlerMiddleware } from "./middlewares/errorHandler.js";
 import { connectToDB } from "./utils/connect.js";
@@ -11,12 +12,15 @@ import router from "./routes/user.route.js";
 const app = express();
 const port = process.env.PORT || 8090;
 app.use(cors());
+app.use(express.json());
+app.use(cookieParser());
+app.use(express.urlencoded({ extended: true }));
 
-app.use("/api/v1", router);
+app.use("/api/v1/user", router);
 
 // error handler middleware
-app.use(errorHandlerMiddleware);
 app.use(notFound);
+app.use(errorHandlerMiddleware);
 
 // connect to db
 
